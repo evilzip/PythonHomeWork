@@ -11,5 +11,5 @@ SecondDigit = (UserValue//10)%10
 ThirdDigit = UserValue%10
 print(FirstDigit, SecondDigit, ThirdDigit)
 SumDigits = FirstDigit + SecondDigit+ThirdDigit
-print(f'Сумма цифр в Вашем числе {UserValue} равна {SumDigits} ({FirstDigit} + {SecondDigit} + {ThirdDigit})')
+print(f'Сумма цифр в Вашем числе {UserValue} равнна {SumDigits} ({FirstDigit} + {SecondDigit} + {ThirdDigit})')
 
