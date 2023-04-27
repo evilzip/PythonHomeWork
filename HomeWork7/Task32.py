@@ -4,10 +4,12 @@
 # После загрузки задания, вы можете проверить себя самостоятельно с помощью эталонного решения
 
 import random
-test_list = [random.randint(0,10) for _ in range(0,20)]
+
+test_list = [random.randint(0, 10) for _ in range(0, 20)]
 print(f'список случайных элементов:\n {test_list}')
 left_limit = int(input('Левая граница диапазона выборки: '))
 right_limit = int(input('Правая граница диапазона выборки: '))
-index_list = [(test_list[i],f'[{i}]') for i in range(len(test_list)) if left_limit<test_list[i]<right_limit]
-print(f'Список индексов элементов списка входящих в диапазон {left_limit, right_limit}\n'
-      f'(элемент,[индекс])=>{index_list}')
+index_list = [(test_list[i], i) for i in range(len(test_list)) if left_limit <= test_list[i] <= right_limit]
+print(f'Список индексов элементов списка входящих в диапазон '
+      f'{left_limit, right_limit}\n'
+      f'(элемент,индекс)=>{index_list}')
